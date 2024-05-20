@@ -7,6 +7,7 @@ import Footer from './layout/Footer'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Form from './pages/Form'
+import Detail from './pages/Detail'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>} ></Route>
-        <Route path='/:id' element={<Form/>} ></Route>
+        <Route path='/form' element={<Form/>} ></Route>
+        <Route path='/:productId' element={<Detail/>}/>
       </Routes>
       <Footer/>
     </>
